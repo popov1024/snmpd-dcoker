@@ -6,4 +6,4 @@ RUN apk update && \
 EXPOSE 161/udp
 EXPOSE 162/udp
 
-CMD ["/usr/bin/snmpd"]
+CMD ["/usr/sbin/snmpd", "-f"]
