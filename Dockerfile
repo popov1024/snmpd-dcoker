@@ -1,7 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && \
-    apk add net-snmp
+RUN apk --no-cache add net-snmp
 
 EXPOSE 161/udp
 EXPOSE 162/udp
